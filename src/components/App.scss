@@ -1,0 +1,24 @@
+@import '../css/another-file';
+
+.pmpro-react-demo{
+	.hidden{
+		display:none;
+	}
+
+	th,
+	td {
+		padding: 0 10px ;
+		line-height: inherit;
+		border: 1px solid darkgrey;
+		max-width: 40rem;
+	}
+
+	.check{
+		opacity: 0;
+		transition: opacity 2s ease-in-out;
+		&.saved{
+			opacity: 1;
+			transition: opacity 2s ease-in-out;
+		}
+	}
+}
