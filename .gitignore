@@ -4,3 +4,5 @@ yarn-error.log
 node_modules
 dist
 pmpro-react-demo-built
+config.json
+yarn.lock
