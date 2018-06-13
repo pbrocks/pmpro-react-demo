@@ -17,7 +17,7 @@ Companion blog post: https://deliciousbrains.com/develop-wordpress-plugin-webpac
 1. Open Terminal.
 1. `cd` into your plugin's folder and run `yarn`
 1. Run `yarn start` to get Webpack and BrowserSync running
-1. Return to your plugin page, `http://pmpro.local/wp-admin/index.php?page=pmpro-react-demo`, you should see your WP Options in an editable table.
+1. A proxy window should open your plugin page, `http://pmpro.local/wp-admin/index.php?page=pmpro-react-demo`, at `http://localhose:3000/wp-admin/index.php?page=pmpro-react-demo`, and you should see your WP Options in an editable table.
 
 ### To build for production run:
 
