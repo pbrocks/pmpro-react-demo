@@ -4,3 +4,4 @@ yarn-error.log
 node_modules
 dist
 pmpro-react-demo-built
+package-lock.ign.json
