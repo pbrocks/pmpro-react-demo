@@ -6,13 +6,18 @@ Companion blog post: https://deliciousbrains.com/develop-wordpress-plugin-webpac
 
 ### Getting started
 
+1. Fork repo to your Github account
 1. Clone repo to your `wp-content/plugins` folder
-1. In `config.json` change the `proxyURL` to point to your WordPress admin page or plugin page.
-1. In your host WordPress `wp-config.php` file add `define( 'PMPRO_AJAX_BASE', 'http://sweetsite.dev/wp-json/pmpro/v1' );` and update it to point to your REST API base
+1. In `config.json` change the `proxyURL` to match the admin url of the plugin page, `http://pmpro.local/wp-admin/index.php?page=pmpro-react-demo`.
+1. In your host WordPress `wp-config.php` file add `define( 'PMPRO_AJAX_BASE', 'http://pmpro.local/wp-json/pmpro/v1' );` and update it to point to your REST API base
 1. Modify any WordPress config in `pmpro-react-demo.php`. Rename files/methods/strings as necessary.
 1. Activate the plugin in wp-admin
-1. `cd` into your checked out folder and run `yarn`
+1. Navigate to the the admin url of the plugin page, `http://pmpro.local/wp-admin/index.php?page=pmpro-react-demo`.
+1. The page should be blank.
+1. Open Terminal.
+1. `cd` into your plugin's folder and run `yarn`
 1. Run `yarn start` to get Webpack and BrowserSync running
+1. Return to your plugin page, `http://pmpro.local/wp-admin/index.php?page=pmpro-react-demo`, you should see your WP Options in an editable table.
 
 ### To build for production run:
 
